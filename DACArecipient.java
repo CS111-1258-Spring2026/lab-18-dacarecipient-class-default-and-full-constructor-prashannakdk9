@@ -58,8 +58,34 @@ public class DACArecipient
 	//TODO: don't forget to copy all your methods from the previous labs!
 	
   /**** CONSTRUCTORS ****/
-  //TODO: Write the no-argument constructor and full constructor. Remember to include documentation for each method.
+  
+  // Default constructor
+  public DACArecipient()
+  {
+    surname = "Unknown";
+    givenName = "Unknown";
+    uscisNumber = "Unknown";
+    countryOfOrigin = "Unknown";
+    birthday = 2415021;
+    validFromDate = 2415021;
+    expirationDate = 2415021;
+    sex = 'X';
+  }
 
+  // Full constructor
+  public DACArecipient(String surname, String givenName, String uscisNumber,
+                       String countryOfOrigin, int birthday,
+                       int validFromDate, int expirationDate, char sex)
+  {
+    this.surname = surname;
+    this.givenName = givenName;
+    this.uscisNumber = uscisNumber;
+    this.countryOfOrigin = countryOfOrigin;
+    this.birthday = birthday;
+    this.validFromDate = validFromDate;
+    this.expirationDate = expirationDate;
+    this.sex = sex;
+  }
 
 	/***** OTHER REQUIRED METHODS *****/
   public String toString()
